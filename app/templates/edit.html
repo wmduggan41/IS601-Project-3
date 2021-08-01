@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/edit/{{player.id}}" method="post">
+
+    <div class="row">
+        <div class="col">
+            <label for="fldPlayerName">Player Name</label>
+            <input id="fldPlayerName" type="text" class="form-control" name="fldPlayerName" value="{{player.fld_Name}}">
+        </div>
+        <div class="col">
+            <label for="fldTeamName">Team Name</label>
+            <input id="fldTeamName" type="text" class="form-control" name="fldTeamName" value="{{player.fld_Team}}">
+        </div>
+    </div>
+
+    </div>
+        <div class="row">
+        <div class="col">
+            <label for="fldPosition">Position</label>
+            <input id="fldPosition" type="text" class="form-control" name="fldPosition" value="{{player.fld_Position}}">
+        </div>
+        <div class="col">
+            <label for="fldAge">Age</label>
+            <input id="fldAge" type="number" class="form-control" name="fldAge" value="{{player.fld_Age}}">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label for="fldHeight">Height (inches)</label>
+            <input id="fldHeight" type="number" class="form-control" name="fldHeight" value="{{player.fld_Height_inches}}">
+        </div>
+        <div class="col">
+            <label for="fldWeight">Weight (lbs)</label>
+            <input id="fldWeight" type="number" class="form-control" name="fldWeight" value="{{player.fld_Weight_lbs}}">
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-success">Save</button>
+
+</form>
+{% endblock %}

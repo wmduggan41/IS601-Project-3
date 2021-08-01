@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content %}
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Player Name</th>
+        <th scope="col">Team Name</th>
+        <th scope="col">Position</th>
+        <th scope="col">Height (inches)</th>
+        <th scope="col">Weight (lbs)</th>
+        <th scope="col">Age</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for player in players %}
+    <tr>
+        <td><a href="view/{{player.id}}">{{ player.fld_Name }}</a></td>
+        <td>{{ player.fld_Team }}</td>
+        <td>{{ player.fld_Position }}</td>
+        <td>{{ player.fld_Height_inches }}</td>
+        <td>{{ player.fld_Weight_lbs }}</td>
+        <td>{{ player.fld_Age }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

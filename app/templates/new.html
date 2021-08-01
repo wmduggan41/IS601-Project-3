@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/players/new" method="POST">
+    <div class="row">
+        <div class="col">
+            <label for="fldPlayerName">Player Name</label>
+            <input id="fldPlayerName" type="text" class="form-control" placeholder="John Smith" name="fldPlayerName">
+        </div>
+        <div class="col">
+            <label for="fldTeamName">Team Name</label>
+            <input id="fldTeamName" type="text" class="form-control" placeholder="Yankees" name="fldTeamName">
+        </div>
+    </div>
+        <div class="row">
+        <div class="col">
+            <label for="fldPosition">Position</label>
+            <input id="fldPosition" type="text" class="form-control" placeholder="Pitcher" name="fldPosition">
+        </div>
+        <div class="col">
+            <label for="fldAge">Age</label>
+            <input id="fldAge" type="number" class="form-control" placeholder="33" name="fldAge">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label for="fldHeight">Height (inches)</label>
+            <input id="fldHeight" type="number" class="form-control" placeholder="72" name="fldHeight">
+        </div>
+        <div class="col">
+            <label for="fldWeight">Weight (lbs)</label>
+            <input id="fldWeight" type="number" class="form-control" placeholder="185" name="fldWeight">
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+
+</form>
+
+{% endblock %}
