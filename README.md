@@ -1,3 +1,5 @@
+[![Build Status](https://www.travis-ci.com/wmduggan41/IS601-Project-3.svg?branch=master)](https://www.travis-ci.com/wmduggan41/IS601-Project-3)
+
 # IS 601 - Project 3
 Please refer to my word document for showing screenshots working
 
@@ -12,7 +14,7 @@ The data was taken from [this](https://people.sc.fsu.edu/~jburkardt/data/csv/csv
 As the project was built, each API endpoint was manually tested using Postman. Download my word document for full screenshot results. 
 Below is what my app looked like after launch:
 
-Screenshot of 'localhost:5000/mlbdata'
+Screenshot of 'localhost:5000/mlb-data'
 ![GitHub Logo](screenshots/localhostmlb.PNG)
 
 
